@@ -5,11 +5,11 @@
   <form class="" action="/compose" method="post">
     <div class="form-group">
       <label for="postTitle">Title</label> <br>
-      <input class="form-control" id="postTitle" type="text" name="postTitle"><br>
-      <!-- <label for="image">Image</label> <br>
-      <input class="form-control" id="image" type="file" name="image"><br> -->
+      <input class="form-control" id="postTitle" type="text" name="postTitle" required><br>
       <label for="postBody">Post</label><br>
       <textarea class="form-control" id="postBody" name="postBody" rows="5" cols="50"></textarea><br>
+      <label for="author">Poster Name</label> <br>
+      <input class="form-control" id="author" type="text" name="author" required><br>
     </div>
     <button class="btn btn-primary" type="submit" name="list">Publish</button>
   </form>
