@@ -3,6 +3,24 @@
     padding-bottom: 70px;
 }
 
+.projects>li{
+  font-size: 22px;
+  list-style: none;
+}
+
+.projects>li::before{
+  content: "\2022";
+  color: gray;
+  font-weight: 900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
 .posts > div > a {
  text-decoration: none;
  color:  #1abc9c
@@ -28,7 +46,7 @@
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.23);
   border-radius: 4px;
   padding-bottom: 20px;
-  padding-left: 15px;
+  padding: 2px 15px 20px 15px;
   margin-bottom: 30px;
 }
 .navbar {
