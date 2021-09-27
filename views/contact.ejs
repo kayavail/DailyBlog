@@ -1,8 +1,39 @@
 <%- include("partials/header") -%>
 
-<div class="post">
-  <h1><%-contact%></h1>
+
+<div class="content">
+  <div class="content mainbar">
+      <div class="article">
+          <h2><span>Send us</span> mail</h2>
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="post" id="sendemail">
+            <ol>
+              <li>
+                <label for="name">Name</label>
+                <input id="name" name="name" class="text" placeholder="Name" required/>
+              </li>
+              <li>
+                <label for="email">Email Address</label>
+                <input id="email" name="email" class="text" placeholder="Email address" required/>
+              </li>
+              <li>
+                <label for="website">Website</label>
+                <input id="website" name="website" class="text" placeholder="Website"/>
+              </li>
+              <li>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="8" cols="50" placeholder="Write your message" required></textarea>
+              </li>
+              <li>
+                <input type="image" name="imageField" id="imageField" src="images/submit.gif" class="send" />
+                <div class="clr"></div>
+              </li>
+            </ol>
+          </form>
+        </div>
+      <!-- <div class="post">
+          <h1><%-contact%></h1>
+        </div> -->
+
+  <%- include("partials/sidebar") -%>
 </div>
-
-
 <%- include("partials/footer") -%>

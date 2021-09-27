@@ -1,11 +1,16 @@
 <%- include("partials/header") -%>
 
+
+<div class="content">
+    <div class="content mainbar">
 <div class="">
   <h1>Add new Post</h1>
   <form class="" action="/compose" method="post">
     <div class="form-group">
       <label for="postTitle">Title</label> <br>
       <input class="form-control" id="postTitle" type="text" name="postTitle" required><br>
+      <!-- <label for="image">Image</label> <br>
+      <input class="form-control" id="image" type="file" name="image"><br> -->
       <label for="postBody">Post</label><br>
       <textarea class="form-control" id="postBody" name="postBody" rows="5" cols="50"></textarea><br>
       <label for="author">Poster Name</label> <br>
@@ -15,5 +20,6 @@
   </form>
 
 </div>
+<%- include("partials/sidebar") -%>
 
 <%- include("partials/footer") -%>

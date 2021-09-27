@@ -1,7 +1,8 @@
 <%- include("partials/header") -%>
 
 
-
+<div class="content">
+    <div class="content mainbar">
 <div class="post">
 
     <h1><%= title %></h1>
@@ -11,5 +12,6 @@
       <p class="signature">Posted by <strong><%= author %></strong>: <%= added %></p>
 </div>
 
-
+<%- include("partials/sidebar") -%>
+</div>
 <%- include("partials/footer") -%>
