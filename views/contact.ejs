@@ -6,22 +6,21 @@
       <div class="article">
           <h2><span>Send us</span> mail</h2>
           <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="post" id="sendemail">
-   
+            <div class="form-group">
                 <label for="name">Name</label>
-                <input id="name" name="name" class="text" placeholder="Name" required/>
-          
+                <input id="name" name="name" class="form-control" placeholder="Name" required/>
+          <br>
                 <label for="email">Email Address</label>
-                <input id="email" name="email" class="text" placeholder="Email address" required/>
-      
+                <input id="email" name="email" class="form-control" placeholder="Email address" required/>
+                <br>
                 <label for="website">Website</label>
-                <input id="website" name="website" class="text" placeholder="Website"/>
-       
+                <input id="website" name="website" class="form-control" placeholder="Website"/>
+                <br>
                 <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="8" cols="50" placeholder="Write your message" required></textarea>
-      
-                <input type="image" name="imageField" id="imageField" src="images/submit.gif" class="send" />
-                <div class="clr"></div>
-       
+                <textarea class="form-control" id="message" name="message" rows="8" cols="50" placeholder="Write your message" required></textarea>
+              </div>
+                <button class="btn btn-primary" type="submit" name="list">Publish</button>
+              
           </form>
         </div>
       <!-- <div class="post">
